@@ -7,10 +7,6 @@ use think\Request;
 
 class Index{
 
-    public function index(){
-
-    }
-
     public function commit(){
         $request = Request::instance();
         $data    = $request->param();
