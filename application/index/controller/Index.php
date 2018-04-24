@@ -1068,7 +1068,7 @@ class Index
 
 
         //组装社保的五险详情
-        $newArr = [];L
+        $newArr = [];
         foreach ($data as $c => $o) {
             foreach ($o as $a => $b) {
                 if (!array_key_exists($b['social_month'], $newArr)) {
