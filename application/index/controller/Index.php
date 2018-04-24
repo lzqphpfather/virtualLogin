@@ -1020,6 +1020,7 @@ class Index{
      * @author langziqiang
      */
     public function getCdSocialDetail($uid){
+
         $rs = Http::curl_get("http://insurance.cdhrss.gov.cn/QueryInsuranceInfo.do?flag=2", VIRTUAL_LOGIN_CD_INSURANCE_COOKIE_PATH . $uid . '.txt', VIRTUAL_LOGIN_CD_INSURANCE_COOKIE_PATH . $uid . '.txt');
 
         $array = ['old' => 3, 'shiye' => 8, 'yiliao' => 5, 'gongshang' => 7, 'shengyu' => 10];
